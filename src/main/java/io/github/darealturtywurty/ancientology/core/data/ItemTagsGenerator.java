@@ -17,5 +17,4 @@ public class ItemTagsGenerator extends ItemTagsProvider {
     @Override
     protected void addTags() {
     }
-
 }

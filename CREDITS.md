@@ -12,12 +12,18 @@
 
 - [ConnorTron110](https://github.com/ConnorTron110)
   - Discord: `ConnorTron110#0110`
+  
+- [PhoenixWB](https://github.com/Phoenix-WB)
+  - Discord: `PhoenixWB#8466`
 
 ## Assets
 
 - Comso
   - Discord: `Comso#1828`
   - Created: the Raw Tin, Tin Ore, and Tin Ingot textures
+  
+- PhoenixWB
+  - Created: Bunyip Texture + Model
 
 ## Miscellaneous
 

@@ -1,13 +1,22 @@
 package io.github.darealturtywurty.ancientology.client.util;
 
 import io.github.darealturtywurty.ancientology.Ancientology;
+import io.github.darealturtywurty.ancientology.client.render.renderers.BunyipRenderer;
+import io.github.darealturtywurty.ancientology.core.init.EntityInit;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public final class ClientEvents {
+    @OnlyIn(Dist.CLIENT)
+    @SubscribeEvent
+    public static void registerRenderers(final FMLClientSetupEvent event) {
+        EntityRenderers.register(EntityInit.BUNYIP.get(), manager -> new BunyipRenderer(manager));
+    }
     private ClientEvents() {
         throw new IllegalAccessError("Illegal access to hidden event bus subscriber class!");
     }
